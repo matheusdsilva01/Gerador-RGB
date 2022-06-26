@@ -1,0 +1,59 @@
+.datetime{
+  min-width: 714px;
+  padding: 0;
+  background-color: #F6F6F6;
+  margin-bottom: 30px;
+}
+
+.container.commands {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E5E5E5;
+  min-width: 714px;
+  min-height: 476px;
+  padding: 37px 0;
+}
+
+section.inputs-ranger {
+  display: flex;
+  width: 100%;
+  gap: 19px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs-ranger .input-ranger {
+  border-radius: 3px;
+}
+
+.inputs-ranger .input-ranger.red {
+  background-color: #FF817E;
+}
+
+.inputs-ranger .input-ranger.green {
+  background-color: #3FB73D;
+}
+
+.inputs-ranger .input-ranger.blue {
+  background-color: #515AAB;
+}
+
+div#color {
+  margin-top: 50px;
+  width: 226px;
+  height: 226px;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px #00000025;
+}
+
+#root {
+  font-family: 'IBM Plex Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
