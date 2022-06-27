@@ -1,5 +1,15 @@
-.datetime{
-  min-width: 714px;
+div.container-app {
+  width: 100%;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.datetime {
+  max-width: 714px;
+  width: 100%;
   padding: 0;
   background-color: #F6F6F6;
   margin-bottom: 30px;
@@ -10,7 +20,8 @@
   align-items: center;
   flex-direction: column;
   background-color: #E5E5E5;
-  min-width: 714px;
+  max-width: 714px;
+  width: 100%;
   min-height: 476px;
   padding: 37px 0;
 }
@@ -21,6 +32,10 @@ section.inputs-ranger {
   gap: 19px;
   justify-content: center;
   align-items: center;
+}
+.inputs-ranger h4{
+ margin: 15px 0;
+ color: #0b0c0e;
 }
 
 .inputs-ranger .input-ranger {
@@ -46,14 +61,40 @@ div#color {
   border-radius: 50%;
   box-shadow: 0 4px 4px #00000025;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* a:visited {
+  color: initial;
+} */
+a:hover {
+  text-decoration: underline;
+}
 
 #root {
   font-family: 'IBM Plex Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+}
+
+div.container-app.dark {
+  background-color: #363940;
+}
+
+div.container-app.dark :is(p, h1, h2, h3, h4) {
+  color: #fff;
+}
+
+div.container-app.dark .datetime{
+  background-color: #44474E;
+}
+
+div.container-app.dark .container.commands {
+  background-color: #44474E;
+}
+@media screen and (max-width: 490px) {
+  section.inputs-ranger {
+    flex-direction: column;
+  }
 }
