@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <>
-      <div className={`container-app ${date.getHours() >= 18 && date.getHours() < 6 ? 'dark' : ''}`}>
+      <div className={`container-app ${date.getHours() >= 18 ? 'dark' : ''}`}>
         <h1>RGB Generator</h1>
         <section className="datetime">
           <h3><img src={Pencil} alt="caneta" /> {date.toLocaleDateString()} - {`${date.getHours()}:${(date.getMinutes() < 10 ? '0' : '') + date.getMinutes()}`}</h3>
