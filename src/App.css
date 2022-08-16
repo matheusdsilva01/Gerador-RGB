@@ -1,5 +1,6 @@
 div.container-app {
   width: 100%;
+  min-height: 100vh;
   text-align: center;
   color: #2c3e50;
   display: flex;
